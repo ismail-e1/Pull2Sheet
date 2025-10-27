@@ -1,4 +1,6 @@
-## Pull2Sheet - Local Privacy First AI-Powered Web Data Extraction Tool
+<img width="100" height="100" alt="iconfull" src="https://github.com/user-attachments/assets/f1ea6dcd-fc9b-49b8-81e0-5f0a94d3a544" />
+
+# Pull2Sheet - Local Privacy First AI-Powered Web Data Extraction Tool
 
 1. Introduction
 2. The Problem It Solves
