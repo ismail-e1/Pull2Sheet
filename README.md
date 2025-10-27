@@ -76,8 +76,7 @@ If you are installing this extension from source files, follow these steps to "s
 3. Configure Fields (Optional): Review the 'TYPE', 'FORMAT', and 'KEYWORDS' tags. Providing 'KEYWORDS' (aliases for your headers) significantly improves AI accuracy to the structured output you want.
 4. Extract Data: Navigate to a webpage. Highlight the text you want to extract OR right-click an image. Select "Extract to Pull2Sheet" from the context menu.
 5. Review and Add: The AI fills the fields in the side panel. Review the data for accuracy, make any necessary edits, and click "Add Row to Sheet".
-6. Batch Mode (Optional): For lists or search results, open the settings (⚙️) and enable "Batch Extraction Mode" before extracting. The AI will automatically extract and add rows for each item found in the selection (Note: Limit to few items at a time since model context window is limited & processing time would be high).
-7. Download: Once you have added one or more rows, the "Download Updated Sheet" button will appear. Click it to save your updated file.
+6. Download: Once you have added one or more rows, the "Download Updated Sheet" button will appear. Click it to save your updated file.
 
 ----------------------------------------------------------------
 
