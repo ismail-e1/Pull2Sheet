@@ -1,6 +1,4 @@
-================================================================
-Pull2Sheet - Local Privacy First AI-Powered Web Data Extraction Tool
-================================================================
+## Pull2Sheet - Local Privacy First AI-Powered Web Data Extraction Tool
 
 1. Introduction
 2. The Problem It Solves
