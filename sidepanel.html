@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pull2Sheet</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div id="loadingOverlay" class="hidden" role="alert" aria-busy="true">
+    <div class="spinner"></div>
+    <p id="loadingMessage">Processing...</p>
+    <button id="stopAIBtn" class="stop-btn">Stop AI Task</button>
+  </div>
+
+  <header class="header-container">
+    <button id="settingsBtn" title="Settings" aria-label="Settings">⚙️</button>
+    
+    <div id="settingsMenu" class="hidden" role="menu">
+      <a id="guideBtn" href="https://github.com/ismail-e1/Pull2Sheet/blob/main/README.md" target="_blank" role="menuitem">How to Use</a>
+      <hr>
+      
+      <div class="settings-item">
+          <div class="settings-label">
+            <label for="aiAnalysisToggle">Auto-Detect Field Info</label>
+            <span class="info-tooltip">ⓘ
+              <span class="tooltip-text">When uploading a sheet, AI analyzes headers to guess field types, formats, and keywords.</span>
+            </span>
+          </div>
+          <label class="switch">
+              <input type="checkbox" id="aiAnalysisToggle">
+              <span class="slider"></span>
+          </label>
+      </div>
+      
+      <div class="settings-item">
+          <div class="settings-label">
+            <label class="hidden" for="batchModeToggle">Batch Extraction Mode</label>
+            <span class="hidden" class="info-tooltip">ⓘ
+              <span class="tooltip-text">Enable this when extracting data from lists or search results. AI will extract multiple items automatically. (Text only)</span>
+            </span>
+          </div>
+          <label class="hidden" class="switch">
+              <input type="checkbox" id="batchModeToggle">
+              <span class="slider"></span>
+          </label>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-content">
+    
+    <div class="upload-section">
+        <label for="fileInput" class="file-upload-btn">Choose Sheet File</label>
+        <input type="file" id="fileInput" accept=".xlsx, .xls, .csv" aria-label="Upload Sheet File" hidden>
+        <p id="fileTypesLabel" class="file-types-label">Supported: .xlsx, .xls, .csv</p>
+        </div>
+     
+    <div class="template-controls">
+        <button id="loadRecipeBtn" class="recipe-btn secondary-btn">Load Template (.json)</button>
+        <button id="clearRecipeBtn" class="recipe-btn clear-btn hidden">Clear Field Info</button>
+    </div>
+
+    <div class="guiding-labels hidden">
+      <span class="data-tag data-type">TYPE</span>
+      <span class="data-tag data-format">FORMAT</span>
+      <span class="data-tag data-keywords">KEYWORDS</span>
+    </div>
+
+    <div id="fieldsContainer" role="form"></div>
+  </div>
+
+  <div class="actions-container">
+    <button id="addToSheetBtn" class="action-btn primary-btn" disabled>Add Row to Sheet</button>
+    <button id="saveRecipeBtn" class="recipe-btn secondary-btn" disabled>Save as Template</button>
+    <button id="downloadBtn" class="action-btn download-btn hidden">Download Updated Sheet</button>
+    <span id="updateCounter" class="update-counter hidden" role="status"></span>
+  </div>
+
+  <div class="debug-footer">
+    <div class="log-header">
+      <strong>Activity Log</strong>
+      <button id="toggleLogBtn" title="Show Activity Log" aria-label="Toggle Activity Log">˄</button>
+    </div>
+    <div id="activityLog" class="hidden" role="log"></div>
+    <p class="ai-disclaimer">AI can make mistakes. Double-check important information.</p>
+  </div>
+
+  <div id="toastNotification" class="hidden" role="alert"></div>
+
+  <script src="xlsx.full.min.js"></script>
+  <script src="sidepanel.js"></script>
+</body>
+</html>

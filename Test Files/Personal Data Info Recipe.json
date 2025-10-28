@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Name",
+    "type": "Text",
+    "format": "",
+    "keywords": "Full Name, Customer Name"
+  },
+  {
+    "name": "Birth date",
+    "type": "Date",
+    "format": "DD/MM/YY",
+    "keywords": "Date of Birth, DOB"
+  },
+  {
+    "name": "Sex",
+    "type": "Text",
+    "format": "M",
+    "keywords": "Gender, He/She"
+  },
+  {
+    "name": "Country",
+    "type": "Text",
+    "format": "",
+    "keywords": "Location"
+  },
+  {
+    "name": "Address",
+    "type": "Text",
+    "format": "",
+    "keywords": "Street Address, Residence"
+  },
+  {
+    "name": "Personality Type",
+    "type": "Text",
+    "format": "",
+    "keywords": "Myers-Briggs, Type"
+  }
+]

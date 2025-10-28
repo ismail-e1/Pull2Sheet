@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Invoice Number",
+    "type": "Number",
+    "format": "",
+    "keywords": "Invoice #"
+  },
+  {
+    "name": "Bill to",
+    "type": "Text",
+    "format": "",
+    "keywords": "Bill To, Customer, Payee"
+  },
+  {
+    "name": "Ship To",
+    "type": "Text",
+    "format": "",
+    "keywords": "Ship To, Delivery Address, Customer Address"
+  },
+  {
+    "name": "Invoice Date",
+    "type": "Date",
+    "format": "dd/mm/yyyy",
+    "keywords": "Invoice Date, Billing Date, Date"
+  },
+  {
+    "name": "Ship Mode",
+    "type": "Text",
+    "format": "",
+    "keywords": "Shipping Method, Class"
+  },
+  {
+    "name": "Balance Due Amount",
+    "type": "Decimal",
+    "format": "$1111.11",
+    "keywords": "Due Amount, Outstanding Balance, Remaining Balance"
+  },
+  {
+    "name": "Item Name",
+    "type": "Text",
+    "format": "",
+    "keywords": "Item Name, Product Name, Goods Description"
+  },
+  {
+    "name": "Item Quantity",
+    "type": "Number",
+    "format": "",
+    "keywords": "Quantity, Quantity Ordered, Quantity"
+  },
+  {
+    "name": "Invoice Total",
+    "type": "Decimal",
+    "format": "$1111.11",
+    "keywords": "Total Amount, Invoice Amount, Grand Total"
+  },
+  {
+    "name": "Company Name",
+    "type": "",
+    "format": "",
+    "keywords": ""
+  }
+]
