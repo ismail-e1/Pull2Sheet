@@ -46,14 +46,14 @@ This extension relies entirely on the browser's built-in, on-device AI model (Ge
 ACTION REQUIRED:
 You must ensure the AI model is enabled and downloaded before use.
 
-1. Browser Version: Ensure you are running Google Chrome version 127 or later.
+1. Browser: Ensure you are running Google Chrome where Gemini Nano is available.
 2. Enable Experimental AI: Navigate to `chrome://flags/#prompt-api-for-gemini-nano-multimodal-input` in your browser and ensure the built-in AI features are enabled.
 3. Verify Model Download: The model downloads automatically when enabled, but this can take time. To check the status, navigate to `chrome://on-device-internals/` and Ensure Model status is Ready, And navigate to `chrome://components/` and locate "Optimization Guide On Device Model". Ensure the status is "Up-to-date". 
 
 If the download is missing, in progress, slow, or shows an error, the extension's AI features cannot function.
 
 For detailed instructions, requirements, and troubleshooting regarding the AI model setup, please refer to the official documentation:
-https://developer.chrome.com/docs/ai/get-started#model_download
+https://developer.chrome.com/docs/ai/get-started
 
 ----------------------------------------------------------------
 
